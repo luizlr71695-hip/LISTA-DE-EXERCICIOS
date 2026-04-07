@@ -1,8 +1,5 @@
-﻿
-
-Console.WriteLine("Digite a temperatura que deseja ser convertida:");
+﻿Console.WriteLine("Digite a temperatura que deseja ser convertida:");
 double temperatura = Convert.ToDouble(Console.ReadLine());
-
 
 double multiplicavel = 1.8;
 
