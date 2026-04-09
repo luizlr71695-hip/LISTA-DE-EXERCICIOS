@@ -1,16 +1,21 @@
-﻿int a, fatorial = 1;
+﻿int A, fatorial = 1;
 
-Console.Write("Digite um valor para A: ");
-a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Digite um valor para A:  ");
+A = Convert.ToInt32(Console.ReadLine());
 
-Console.Write(a + "! = ");
-for (int i = a; i >= 1; i--) ;
+Console.Write(A + "! = ");
+
+for (int i = A; i >= 1; i--)
 {
     Console.Write(i + " ");
     fatorial *= i;
+
+    if (i > 1)
+    {
+        Console.WriteLine("X ");
+    }
 }
 
-if (i > 1)
-{
-    Console.Write("x ");
-}
+Console.Write("= " + fatorial);
+
+Console.ReadLine();
